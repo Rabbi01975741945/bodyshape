@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwindcss play cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome playcdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-black border border-white">
+    <!-- navbar start from here-->
+     <nav class="w-full bg-black text-white fixed top-0 left-0 z-50 shadow-md">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-[7%] py-3">
+    
+    <!-- Left Logo + Title -->
+    <div class="text-center">
+      <div class="flex items-center gap-2">
+        <img src="images/logo_left.png" alt="left-logo" class="h-8 sm:h-10">
+        <h2 class="bg-gradient-to-r from-[#F66844] to-[#FF921B] bg-clip-text text-transparent text-xl sm:text-2xl font-semibold">
+          BodyShape
+        </h2>
+        <img src="images/logo_right.png" alt="right-logo" class="h-8 sm:h-10">
+      </div>
+      <p class="hidden sm:block bg-gradient-to-r from-[#F66844] to-[#FF921B] bg-clip-text text-transparent text-sm sm:text-base">
+        Unleash your inner athlete
+      </p>
+    </div>
+
+    <!-- Right Navigation -->
+    <div class="flex items-center">
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex items-center">
+        <li class="ml-5 relative group">
+          <a href="#" class="text-white text-base lg:text-lg font-['Poppins']">Home</a>
+          <span class="absolute left-0 -bottom-1 w-full h-[2px] bg-gradient-to-r from-[#F66844] to-[#FF921B] scale-x-100"></span>
+        </li>
+        <li class="ml-5 relative group">
+          <a href="#" class="text-white text-base lg:text-lg font-['Poppins']">Services</a>
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#F66844] to-[#FF921B] group-hover:w-full transition-all duration-500"></span>
+        </li>
+        <li class="ml-5 relative group">
+          <a href="#" class="text-white text-base lg:text-lg font-['Poppins']">About</a>
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#F66844] to-[#FF921B] group-hover:w-full transition-all duration-500"></span>
+        </li>
+        <li class="ml-5 relative group">
+          <a href="#" class="text-white text-base lg:text-lg font-['Poppins']">Contact</a>
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#F66844] to-[#FF921B] group-hover:w-full transition-all duration-500"></span>
+        </li>
+        <li class="ml-5">
+          <a href="#" class="text-white text-base lg:text-lg font-['Poppins'] bg-gradient-to-r from-[#F66844] to-[#FF921B] px-4 py-2 rounded-sm">
+            Join Us
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <button id="menu-btn" class="block md:hidden text-white text-2xl ml-4">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-700">
+    <ul class="flex flex-col p-4 space-y-4">
+      <li><a href="#" class="text-white text-lg font-['Poppins'] hover:text-orange-400">Home</a></li>
+      <li><a href="#" class="text-white text-lg font-['Poppins'] hover:text-orange-400">Services</a></li>
+      <li><a href="#" class="text-white text-lg font-['Poppins'] hover:text-orange-400">About</a></li>
+      <li><a href="#" class="text-white text-lg font-['Poppins'] hover:text-orange-400">Contact</a></li>
+      <li>
+        <a href="#" class="block text-center text-white text-lg font-['Poppins'] bg-gradient-to-r from-[#F66844] to-[#FF921B] px-4 py-2 rounded">
+          Join Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar end from here -->
+
+
+
+</body>
+
+</html>
